@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <h1 class="text-center">Restaurant signup</h1>
+                <h5 class="text-center">Get Free  Membership</h5><hr>
+                <form [formGroup]="signupgroup">
+                    <div class="mb-3">
+                      <label  class="form-label">Name</label>
+                      <input type="text" formControlName="name" placeholder="Name here" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label  class="form-label">Mobile Number</label>
+                      <input type="text" formControlName="mobile" placeholder="mobile number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label  class="form-label">Email Address</label>
+                      <input type="email" formControlName="email" placeholder="email here" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Password</label>
+                      <input type="password" formControlName="password" placeholder="enter password here" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary" (click)="signupuser()">signup</button>
+                  </form>
+                  <a routerLink="/login">Already Member? Click Here To Signin </a>
+            </div>
+        </div>
+    </div>
+</div>

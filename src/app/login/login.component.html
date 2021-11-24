@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <h1 class="text-center">Restaurant Login</h1>
+                <h5 class="text-center">Feal Free To Login</h5><hr>
+                <form [formGroup]='loginform'>
+                    <div class="mb-3">
+                      <label  class="form-label">User Id</label>
+                      <input type="email" formControlName="email" class="form-control" placeholder="Enter User Id" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Password</label>
+                      <input type="password" formControlName="password" placeholder="Enter Password Here" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+                  </form>
+                  <a routerLink="/signup">New User? Click Here To Signup </a>
+            </div>
+        </div>
+    </div>
+</div>
